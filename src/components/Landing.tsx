@@ -26,29 +26,29 @@ const Landing : FC<pageProps> = ({}) =>{
                 <a className='link'>Learn More</a>
             </div>
         </div>
-        <div className='hidden relative h-[450px] w-[450px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[650px]'>
+        <div className='hidden relative h-[400px] w-[400px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[650px]'>
         <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
-              <ambientLight intensity={.5} />
+              <ambientLight intensity={.8} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.8}>
+              <Sphere args={[1, 100, 200]} scale={2.7}>
                 <MeshDistortMaterial
                 //   color="#3d1c56"
                   attach="material"
                   distort={0.5}
-                  speed={1}
+                  speed={.8}
                 >
                     <GradientTexture
           stops={[0, 1]} // As many stops as you want
-          colors={['#0093E9', '#80D0C7']} // Colors need to match the number of stops
+          colors={['#06beb6', '#48b1bf']} // Colors need to match the number of stops
           size={1024} // Size is optional, default = 1024
          />
          </MeshDistortMaterial>
               </Sphere>
             </Suspense>
           </Canvas>
-            <Image src='/hero-img.png' fill={true} alt="law-ai" style={{objectFit: "contain"}}/>
+            <Image src='/62.png' fill={true} alt="law-ai" style={{objectFit: "contain"}}/>
         </div>
     </section>
 }
