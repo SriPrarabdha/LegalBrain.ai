@@ -3,9 +3,8 @@ import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
 import { FC } from "react";
-
-
-interface pageProps{}
+import Link from "next/link";
+import {UserCircleIcon} from "@heroicons/react/outline"
 
 const page = async ({}) => {
 
@@ -30,17 +29,16 @@ const page = async ({}) => {
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                Your go-to bookstore for fantasy and mystery
+                LegalBrain: Your Leagal AI Assistant
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
-                Bookbuddy is a small bookstore that specializes in fantasy and mystery
-                books. Find us here in San Diego or order online anytime.
+                LegalBrain is collection of various AI Tools specifically catered for all Legal Professionals.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
                 <a
                   href='#'
                   className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'>
-                  Explore books
+                  Explore
                 </a>
                 <a
                   href='#'
@@ -49,20 +47,14 @@ const page = async ({}) => {
                 </a>
               </div>
             </div>
-            <div className='mt-16 flow-root sm:mt-24'>
-
-              {/* <div className='relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
-                <img
-                  src='/bookstore2.jpg'
-                  alt='App screenshot'
-                  className='rounded-md shadow-2xl ring-1 ring-gray-900/10'
-                />
-              </div> */}
-            </div>
+            {/* <div className=" bg-[#E7ECEE]"> */}
+            
+            {/* </div> */}
+        
           </div>
         </div>
         <div
-          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
+          className='absolute inset-x-0 top-[calc(100%-30rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-65rem)] right-20'
           aria-hidden='true'>
           <div
             className='relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
@@ -74,8 +66,59 @@ const page = async ({}) => {
         </div>
       </div>
     </div>
+    <div className="bg-[#E7ECEE] flex items-center justify-center">
+      <br />
+    <div className='mt-20 flex flex-col items-center justify-center gap-12 w-4/5'>
+        
+        <Link href = '/dashboard/lawgpt' className='headerlink'>
+          <div className='flex items-center justify-center space-x-40 '>
+            <div className='relative h-20 w-20 cursor-pointer p-8'>
+              <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            </div>
+            <div className="flex flex-col items center justify-between p-4 gap-4">
+              <h2 className="font-bold text-4xl">Law GPT</h2>
+              <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+            </div>
+          </div>
+        </Link>
+      <Link href = '/dashboard/judgment' className='headerlink'>
+        <div className='flex-1 items-center justify-center space-x-40 md:flex'>
+          <div className='relative h-20 w-20 cursor-pointer p-8'>
+            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+          </div>
+          <div className="flex flex-col items center justify-between p-4 gap-4">
+            <h2 className="font-bold text-4xl">Judgment/Cases Finder</h2>
+            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+          </div>
+        </div>
+      </Link>
+      <Link href = '/dashboard/chatwithdocs' className='headerlink'>
+      <div className='flex-1 items-center justify-center space-x-40 md:flex'>
+          <div className='relative h-20 w-20 cursor-pointer p-8'>
+            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+          </div>
+          <div className="flex flex-col items center justify-between p-4 gap-4">
+            <h2 className="font-bold text-4xl">Chat With Docs</h2>
+            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+          </div>
+        </div>
+      </Link>
+      <Link href = '/dashboard/transliteration' className='headerlink'>
+      <div className='flex-1 items-center justify-center space-x-40 md:flex'>
+          <div className='relative h-20 w-20 cursor-pointer p-8'>
+            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+          </div>
+          <div className="flex flex-col items center justify-between p-4 gap-4">
+            <h2 className="font-bold text-4xl">Transliteration</h2>
+            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+          </div>
+        </div>
+      </Link>
+      </div>
+    </div>
         
     </>
+    
 }
 
 export default page
