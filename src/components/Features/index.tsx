@@ -13,6 +13,7 @@ const Features = () => {
             title="Main Features"
             paragraph="There are many variations of User of Lorem Ipsum available but the majority have suffered alteration in online Law Suit."
             center
+            
           />
 
           <div className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
