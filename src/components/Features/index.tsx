@@ -7,8 +7,7 @@ const Features = () => {
     <>
       <section
         id="features"
-        className="bg-primary/[.03] py-16 md:py-10 lg:py-28 px-16"
-      >
+        className="bg-primary/[.03] py-16 md:py-10 lg:py-28 px-20 bg-[url('https://wallpapercave.com/wp/wp6751675.jpg')] ">
         <div className="container">
           <SectionTitle
             title="Main Features"

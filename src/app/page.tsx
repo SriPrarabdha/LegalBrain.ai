@@ -11,7 +11,7 @@ export default async function Home() {
 
   await db.set('hello' , 'hello')
   return (
-    <div >
+    <div>
       <Header />
       <main className='bg-[#E7ECEE]'>
         <Landing />    
