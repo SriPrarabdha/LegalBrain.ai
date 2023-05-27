@@ -78,7 +78,7 @@ const page = async ({}) => {
         <Link href = '/dashboard/lawgpt' className='headerlink'>
           <div className='flex items-center justify-center space-x-40 '>
             <div className='relative h-20 w-20 cursor-pointer p-8'>
-              <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+              <Image src="/vercel.svg" alt="icon" fill= {true} style={{objectFit: "contain"}} />
             </div>
             <div className="flex flex-col items center justify-between p-4 gap-4">
               <h2 className="font-bold text-4xl">Law GPT</h2>
@@ -89,7 +89,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/judgment' className='headerlink'>
         <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/vercel.svg" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Judgment/Cases Finder</h2>
@@ -100,7 +100,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/chatwithdocs' className='headerlink'>
       <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/vercel.svg" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Chat With Docs</h2>
@@ -111,7 +111,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/transliteration' className='headerlink'>
       <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/vercel.svg" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Transliteration</h2>
