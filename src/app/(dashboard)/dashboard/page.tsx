@@ -9,6 +9,11 @@ import {UserCircleIcon} from "@heroicons/react/outline"
 const page = async ({}) => {
 
     const session = await getServerSession(authOptions)
+    // let user_name = ""
+    // if(session != null && session!=undefined){
+    //   user_name = session.user.name
+    //   const user_img = session.user.image
+    // }
 
     return <>
     <Header user_name={session?.user.name} user_img={session?.user.image}/>
