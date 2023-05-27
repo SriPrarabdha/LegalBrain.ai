@@ -9,6 +9,11 @@ import {UserCircleIcon} from "@heroicons/react/outline"
 const page = async ({}) => {
 
     const session = await getServerSession(authOptions)
+    // let user_name = ""
+    // if(session != null && session!=undefined){
+    //   user_name = session.user.name
+    //   const user_img = session.user.image
+    // }
 
     return <>
     <Header user_name={session?.user.name} user_img={session?.user.image}/>
@@ -29,7 +34,7 @@ const page = async ({}) => {
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                LegalBrain: Your Leagal AI Assistant
+                LegalBrain: Your Legal AI Assistant
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
                 LegalBrain is collection of various AI Tools specifically catered for all Legal Professionals.
@@ -71,9 +76,9 @@ const page = async ({}) => {
     <div className='mt-20 flex flex-col items-center justify-center gap-12 w-4/5'>
         
         <Link href = '/dashboard/lawgpt' className='headerlink'>
-          <div className='flex items-center justify-center space-x-40 '>
+          <div className='flex-1 items-center justify-center space-x-40 md:flex'>
             <div className='relative h-20 w-20 cursor-pointer p-8'>
-              <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+              <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
             </div>
             <div className="flex flex-col items center justify-between p-4 gap-4">
               <h2 className="font-bold text-4xl">Law GPT</h2>
@@ -84,7 +89,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/judgment' className='headerlink'>
         <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Judgment/Cases Finder</h2>
@@ -95,7 +100,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/chatwithdocs' className='headerlink'>
       <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Chat With Docs</h2>
@@ -106,7 +111,7 @@ const page = async ({}) => {
       <Link href = '/dashboard/transliteration' className='headerlink'>
       <div className='flex-1 items-center justify-center space-x-40 md:flex'>
           <div className='relative h-20 w-20 cursor-pointer p-8'>
-            <Image src="/./favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+            <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Transliteration</h2>
