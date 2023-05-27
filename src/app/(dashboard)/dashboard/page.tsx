@@ -76,7 +76,7 @@ const page = async ({}) => {
     <div className='mt-20 flex flex-col items-center justify-center gap-12 w-4/5'>
         
         <Link href = '/dashboard/lawgpt' className='headerlink'>
-          <div className='flex items-center justify-center space-x-40 '>
+          <div className='flex-1 items-center justify-center space-x-40 md:flex'>
             <div className='relative h-20 w-20 cursor-pointer p-8'>
               <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
             </div>
