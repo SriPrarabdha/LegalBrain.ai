@@ -12,13 +12,13 @@ import Button from './ui/Button';
 interface pageProps{}
 
 const Landing : FC<pageProps> = ({}) =>{
-    return <section className='sticky top-0 mx-auto flex h-screen max-w-[900px] xl:max-w-[1350px] items-center justify-between'>
+    return <section className='sticky top-0 mx-auto flex h-screen max-w-[1000px] xl:max-w-[1350px] items-center justify-between'>
         <div className='space-y-10 px-10'>
             <h1 className='space-y-5 tracking-wider xl:text-7xl'>
                 {/* <span className=' block font-extrabold text-6xl'>Powered By</span> */}
-                <span className='text-5xl font-extrabold block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 px-2'>Powered By AI</span>
-                <span className='text-5xl font-extrabold block'>Driven By</span>
-                <span className='text-6xl font-extrabold block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Lawyers</span>
+                <span className='text-6xl font-extrabold block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 px-4'>Powered By AI</span>
+                <span className='text-4xl  font-extrabold block px-4'>Driven By</span>
+                <span className='text-6xl font-extrabold block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 px-4'>Lawyers</span>
             </h1>
 
             <div className='space-x-8'>

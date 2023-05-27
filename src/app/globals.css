@@ -43,3 +43,35 @@
     @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100
   }
 }
+
+
+/* 
+setting scroll bar */
+
+/* body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(39, 39, 39);
+  outline: 1px solid rgb(33, 34, 34);
+} */
+
+body::-webkit-scrollbar {
+  width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background-color: #f7f4ed;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#BFBFBF;
+  border-radius: 100vh;
+  border: 2px solid #f6f7ed;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color:#A0A0A0;
+}
