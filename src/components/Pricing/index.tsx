@@ -23,12 +23,20 @@ const Pricing = () => {
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
           >
-            <span
+<!--             <span
               onClick={() => setIsMonthly(true)}
               className={`${
                 isMonthly
                   ? "pointer-events-none text-primary"
                   : "text-dark dark:text-white"
+              } mr-4 cursor-pointer text-base font-semibold`}
+            > -->
+            <span
+              onClick={() => setIsMonthly(true)}
+              className={`${
+                isMonthly
+                  ? "pointer-events-none text-primary"
+                  : "text-dark"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
               Monthly
@@ -52,7 +60,7 @@ const Pricing = () => {
               onClick={() => setIsMonthly(false)}
               className={`${
                 isMonthly
-                  ? "text-dark dark:text-white"
+                  ? "text-dark "
                   : "pointer-events-none text-primary"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
