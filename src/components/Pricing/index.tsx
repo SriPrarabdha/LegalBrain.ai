@@ -8,8 +8,9 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-26 md:py-20 lg:py-28  bg-zinc-100">
-      <div className="container">
+    
+    <section id="pricing" className="relative z-10 py-26 md:py-10 lg:py-28  bg-zinc-100">
+      <div className="container mx-auto p-10 ">
         <SectionTitle
           title="Simple and Affordable Pricing"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
@@ -60,7 +61,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="px-20 m-10 grid grid-cols-1 gap-x-7 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="m-8 grid grid-cols-1 gap-x-7 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
             price={isMonthly ? "40" : "120"}
