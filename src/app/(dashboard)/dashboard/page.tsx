@@ -1,11 +1,8 @@
+'use client'
 import Header from "@/components/Header";
-import { authOptions } from "@/lib/auth";
-import { getServerSession } from "next-auth";
 import Image from "next/image";
 import { FC } from "react";
 import Link from "next/link";
-import {UserCircleIcon} from "@heroicons/react/outline"
-import axios from "axios";
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 
