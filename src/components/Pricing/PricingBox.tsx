@@ -25,13 +25,8 @@ const PricingBox = (props: {
           </h4>
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
-<<<<<<< HEAD
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
           <button className="flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-black transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-=======
-        <div className="mb-8 border-b border-body-color border-opacity-10 pb-8">
-          <button className="flex w-full items-center justify-center rounded-md bg-slate-700 p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
->>>>>>> 65cab66e5989edbf448704591b9a10b2335fdd9c
             Start Free Trial
           </button>
         </div>
