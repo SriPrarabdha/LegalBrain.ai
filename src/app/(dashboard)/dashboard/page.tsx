@@ -6,13 +6,17 @@ import { FC } from "react";
 import Link from "next/link";
 import {UserCircleIcon} from "@heroicons/react/outline"
 import axios from "axios";
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
 const page = async ({}) => {
 
-    const session = await getServerSession(authOptions)
-    // if(!session){
-    //   return axios.
-    // }
+    const { data: session } = useSession({
+      required: true,
+      onUnauthenticated() {
+        redirect('/login')
+      }
+    })
 
     return <>
     <Header user_name={session?.user.name} user_img={session?.user.image}/>
