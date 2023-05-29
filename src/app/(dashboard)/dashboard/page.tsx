@@ -5,14 +5,13 @@ import Image from "next/image";
 import { FC } from "react";
 import Link from "next/link";
 import {UserCircleIcon} from "@heroicons/react/outline"
+import axios from "axios";
 
 const page = async ({}) => {
 
     const session = await getServerSession(authOptions)
-    // let user_name = ""
-    // if(session != null && session!=undefined){
-    //   user_name = session.user.name
-    //   const user_img = session.user.image
+    // if(!session){
+    //   return axios.
     // }
 
     return <>
