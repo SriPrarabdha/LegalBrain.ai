@@ -9,7 +9,7 @@ import axios from "axios";
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 
-const Page = async ({}) => {
+const Page = () => {
 
     const { data: session } = useSession({
       required: true,
