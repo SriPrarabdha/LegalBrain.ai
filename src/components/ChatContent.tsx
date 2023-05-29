@@ -12,10 +12,9 @@ export type ChatItem = {
 
 type Props = {
   chatItems: ChatItem[];
-  img_url?: string;
 };
 
-export const ChatContent = ({ chatItems , img_url}: Props) => (
+export const ChatContent = ({ chatItems }: Props) => (
   <>
     {chatItems.map((chatItem, index) => (
       <div
