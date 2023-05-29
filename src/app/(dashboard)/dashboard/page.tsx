@@ -1,4 +1,5 @@
 'use client'
+
 import Header from "@/components/Header";
 import Image from "next/image";
 import { FC } from "react";
@@ -6,7 +7,7 @@ import Link from "next/link";
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 
-const Page = () => {
+const Dashboard = async ({}) => {
 
     const { data: session } = useSession({
       required: true,
@@ -126,5 +127,5 @@ const Page = () => {
     
 }
 
-export default Page
+export default Dashboard
 
