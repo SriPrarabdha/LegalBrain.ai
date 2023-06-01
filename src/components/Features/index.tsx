@@ -9,8 +9,8 @@ const Features = () => {
       <section
         id="features"
         // className="bg-primary/[.03] py-16 md:py-10 lg:py-28 px-20 bg-[url('https://wallpapercave.com/wp/wp6751675.jpg')] ">
-        className="bg-primary/[.03] py-20 px-20  md:py-10 md:px-10 lg:py-28    ">
-        <div className="container mx-auto ">
+        className="bg-primary/[.03] py-20 px-12  md:py-10 md:px-10 lg:py-28    ">
+        <div className="container mx-auto">
           <SectionTitle
             title="Main Features"
             paragraph="There are many variations of User of Lorem Ipsum available but the majority have suffered alteration in online Law Suit."
