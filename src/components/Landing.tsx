@@ -25,6 +25,8 @@ const Landing : FC<pageProps> = ({}) =>{
                 <Button title='Explore' login={false}/>
                 <a className='link'>Learn More</a>
             </div>
+            <br />
+            <a className='text-base px-4 link' href='#'>Join waitlist →</a>
         </div>
         <div className='hidden relative h-[400px] w-[400px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[650px]'>
         <Canvas>
