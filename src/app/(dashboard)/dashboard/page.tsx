@@ -9,12 +9,16 @@ import { redirect } from 'next/navigation';
 
 const Dashboard = async ({}) => {
 
-    const { data: session } = useSession({
-      required: true,
-      onUnauthenticated() {
-        redirect('/login')
-      }
-    })
+    // const { data: session } = useSession({
+    //   required: true,
+    //   onUnauthenticated() {
+    //     redirect('/login')
+    //   }
+    // })
+    const { data: session, status } = useSession()
+    if (status === "unauthenticated") {
+      return redirect('/login')
+    }
 
     return <>
     <Header user_name={session?.user.name} user_img={session?.user.image}/>
@@ -35,7 +39,7 @@ const Dashboard = async ({}) => {
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                LegalBrain: Your Legal AI Assistant
+                 {JSON.stringify(session)}
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
                 LegalBrain is collection of various AI Tools specifically catered for all Legal Professionals.
