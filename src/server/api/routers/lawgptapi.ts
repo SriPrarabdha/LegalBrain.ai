@@ -36,6 +36,7 @@ export const aiRouter = createTRPCRouter({
         });
 
         const generatedText = completion.data.choices[0]?.message?.content;
+        // console.log(generatedText)
 
         if (generatedText) {
           messages.push({

@@ -18,7 +18,15 @@ This is the website for LegalBrain built upon T3 stack
 
 First, run the development server:
 
+Fork the repo
+
+Create and populate the .env.local variables according to the .env.example file
+
 ```bash
+npm install 
+# or 
+yarn
+
 npm run dev
 # or
 yarn dev
