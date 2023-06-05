@@ -8,6 +8,7 @@ import { api } from "@/utils/api";
 // import { authOptions } from "@/lib/auth";
 // import { getServerSession } from "next-auth";
 import ChatHeader from "@/components/chatHeader";
+import { log } from "console";
 
 const Home: NextPage = () => {
   // const session = await getServerSession(authOptions)
@@ -99,6 +100,7 @@ const Home: NextPage = () => {
             onReset={handleReset}
             waiting={waiting}
           />
+          {/* {console.log(chatItems)} */}
         </section>
       </div>
     </>

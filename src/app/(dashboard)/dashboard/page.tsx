@@ -1,19 +1,24 @@
+'use client'
+
 import Header from "@/components/Header";
-import { authOptions } from "@/lib/auth";
-import { getServerSession } from "next-auth";
 import Image from "next/image";
 import { FC } from "react";
 import Link from "next/link";
-import {UserCircleIcon} from "@heroicons/react/outline"
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
 
-const page = async ({}) => {
+const Dashboard = async ({}) => {
 
-    const session = await getServerSession(authOptions)
-    // let user_name = ""
-    // if(session != null && session!=undefined){
-    //   user_name = session.user.name
-    //   const user_img = session.user.image
-    // }
+    // const { data: session } = useSession({
+    //   required: true,
+    //   onUnauthenticated() {
+    //     redirect('/login')
+    //   }
+    // })
+    const { data: session, status } = useSession()
+    if (status === "unauthenticated") {
+      return redirect('/login')
+    }
 
     return <>
     <Header user_name={session?.user.name} user_img={session?.user.image}/>
@@ -34,7 +39,7 @@ const page = async ({}) => {
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
               <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                LegalBrain: Your Legal AI Assistant
+                 {JSON.stringify(session)}
               </h1>
               <p className='mt-6 text-lg leading-8 text-gray-600'>
                 LegalBrain is collection of various AI Tools specifically catered for all Legal Professionals.
@@ -126,5 +131,5 @@ const page = async ({}) => {
     
 }
 
-export default page
+export default Dashboard
 

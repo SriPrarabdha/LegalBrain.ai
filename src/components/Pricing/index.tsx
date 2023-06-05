@@ -23,7 +23,7 @@ const Pricing = () => {
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
           >
-        
+
             <span
               onClick={() => setIsMonthly(true)}
               className={`${
@@ -61,7 +61,6 @@ const Pricing = () => {
             </span>
           </div>
         </div>
-
         <div className="m-8 grid grid-cols-1 gap-x-7 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"

@@ -3,12 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface pageProps{
-    user_img? : string
-    user_name?: string
     name?:string
 }
 
-const ChatHeader : FC<pageProps> = ({user_img , user_name , name}) =>{
+const ChatHeader : FC<pageProps> = ({ name}) =>{
     return <>
     {/* <header className='transparent bg-gray-800 top-0 z-30 flex w-full item-center justify-between p-4 '>
         <div className='flex items-center justify-center md:w-1/5'>

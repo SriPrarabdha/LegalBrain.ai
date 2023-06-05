@@ -8,7 +8,6 @@ import { OrbitControls, Sphere, MeshDistortMaterial, GradientTexture } from "@re
 import React, { Suspense } from "react";
 import Button from './ui/Button';
 
-
 interface pageProps{}
 
 const Landing : FC<pageProps> = ({}) =>{
@@ -22,7 +21,9 @@ const Landing : FC<pageProps> = ({}) =>{
             </h1>
 
             <div className='space-x-8'>
-                <Button title='Explore' login={false}/>
+                <Link href={'/dashboard'} >
+                  <Button title='Explore' login={false}/>
+                </Link>
                 <a className='link'>Learn More</a>
             </div>
             <br />

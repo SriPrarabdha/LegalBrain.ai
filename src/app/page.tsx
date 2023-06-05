@@ -21,10 +21,11 @@ export default async function Home() {
         <Landing />    
         </main>
         <Features/>
+ {/* about us  */}
         <AboutSectionOne />
         <AboutSectionTwo />
         <Pricing/>
-        
+
         
         <Footer/>
     
