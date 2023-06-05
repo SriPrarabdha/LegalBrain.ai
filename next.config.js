@@ -4,8 +4,8 @@ const nextConfig = {
         domains:["lh3.googleusercontent.com"],
     },
     experiments: {
-        topLevelAwait: true
-      }
-}
+        topLevelAwait: true,
+      },
+};
 
 module.exports = nextConfig
