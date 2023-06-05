@@ -3,4 +3,5 @@ interface User{
     email : string
     image: string
     id: string
+    text : string
 }
