@@ -12,6 +12,7 @@
     "@heroicons/react": "^1.0.6",
     "@netlify/plugin-nextjs": "^4.37.2",
     "@next-auth/upstash-redis-adapter": "^3.0.4",
+    "@pinecone-database/pinecone": "^0.1.6",
     "@prisma/client": "^4.14.1",
     "@react-three/drei": "^9.68.6",
     "@react-three/fiber": "^8.13.0",
