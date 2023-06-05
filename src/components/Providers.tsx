@@ -2,7 +2,7 @@
 
 import { FC, ReactNode } from 'react';
 import { Toaster } from 'react-hot-toast';
-
+import { SessionProvider } from 'next-auth/react';
 interface ProviderProps{
     children:ReactNode
 }
@@ -10,7 +10,9 @@ interface ProviderProps{
 const Providers : FC<ProviderProps> = ({children}) => {
     return <>
         <Toaster position='top-center' reverseOrder={false} />
-        {children}
+        <SessionProvider>
+            {children}
+        </SessionProvider>
     </>
 }
 
