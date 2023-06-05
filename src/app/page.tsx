@@ -6,7 +6,10 @@ import Features from '@/components/Features'
 import Image from 'next/image'
 import { db } from '@/lib/db'
 import Pricing from "@/components/Pricing";
+import Footer from '@/components/Footer';
 
+import AboutSectionOne from "@/components/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 
 export default async function Home() {
 
@@ -18,8 +21,13 @@ export default async function Home() {
         <Landing />    
         </main>
         <Features/>
+ {/* about us  */}
+        <AboutSectionOne />
+        <AboutSectionTwo />
         <Pricing/>
-        {/* <Features/> */}
+
+        
+        <Footer/>
     
     </div>
   )

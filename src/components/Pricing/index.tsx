@@ -9,8 +9,8 @@ const Pricing = () => {
 
   return (
     
-    <section id="pricing" className="relative z-10 py-26 md:py-10 lg:py-28  bg-zinc-100">
-      <div className="container mx-auto p-10 ">
+    <section id="pricing" className="relative z-10 py-8 md:py-8 lg:py-20  bg-zinc-100">
+      <div className="container mx-auto px-4 md:px-16 ">
         <SectionTitle
           title="Simple and Affordable Pricing"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
@@ -18,19 +18,12 @@ const Pricing = () => {
           width="665px"
         />
 
-        <div className="w-full ">
+        <div className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
           >
-        <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            />
+
             <span
               onClick={() => setIsMonthly(true)}
               className={`${

@@ -20,9 +20,10 @@ const Header : FC<pageProps> = ({user_img , user_name}) =>{
         </div>
         <div className='hidden flex-1 items-center justify-center space-x-8 md:flex'>
             <Link href = '/#features' className='headerlink'>Features</Link>
+            <Link href = '/#about' className='headerlink'>About Us</Link>
             <Link href = '/#pricing' className='headerlink'>Pricing</Link>
             <Link href = '/customer' className='headerlink'>Customer</Link>
-            <Link href = '/aboutus' className='headerlink'>About Us</Link>
+            
         </div>
         {/* <div className='flex gap-4 justify-center items-center md:w-1/5'> */}
             {user_img && user_name ? (
