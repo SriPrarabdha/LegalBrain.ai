@@ -38,10 +38,10 @@ const Dashboard = async ({}) => {
         <div className='py-24 sm:py-32 lg:pb-40'>
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
-              <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+              {/* <h1 className='text-sm font-bold tracking-tight text-gray-900 sm:text-6xl'>
                  {JSON.stringify(session)}
-              </h1>
-              <p className='mt-6 text-lg leading-8 text-gray-600'>
+              </h1> */}
+              <p className='mt-5 text-xl leading-8 text-gray-600 hover:text-slate-900'>
                 LegalBrain is collection of various AI Tools specifically catered for all Legal Professionals.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
@@ -78,7 +78,7 @@ const Dashboard = async ({}) => {
     </div>
     <div className="bg-[#E7ECEE] flex items-center justify-center">
       <br />
-    <div className='mt-20 flex flex-col items-center justify-center gap-12 w-4/5'>
+    <div className='mt-20 mb-36 flex flex-col items-center justify-center gap-12 w-4/5'>
         
         <Link href = '/dashboard/lawgpt' className='headerlink'>
           <div className='flex-1 items-center justify-center space-x-40 md:flex'>
@@ -87,7 +87,9 @@ const Dashboard = async ({}) => {
             </div>
             <div className="flex flex-col items center justify-between p-4 gap-4">
               <h2 className="font-bold text-4xl">Law GPT</h2>
-              <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+              <p className="text-lg font-medium">
+              Supercharge your legal practice with LawGPT, the AI model that revolutionizes case preparation. Input basic case details and receive valuable suggestions, references, and relevant judgments in minutes. Craft persuasive arguments, save time and resources, and stay updated with the latest legal insights for optimal outcomes. Empower your practice with LawGPT's comprehensive knowledge base and elevate your legal expertise today.
+              </p>
             </div>
           </div>
         </Link>
@@ -98,7 +100,7 @@ const Dashboard = async ({}) => {
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Judgment/Cases Finder</h2>
-            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+            <p className="text-lg font-medium">Unlock the hidden gems of legal precedents with LawGPT's advanced Judgment/Case Finder feature. Seamlessly input relevant keywords or case details, and witness the magic unfold as LawGPT swiftly combs through vast legal databases to deliver a curated selection of judgments and cases tailored to your needs. </p>
           </div>
         </div>
       </Link>
@@ -109,7 +111,7 @@ const Dashboard = async ({}) => {
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Chat With Docs</h2>
-            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+            <p className="text-lg font-medium">Effortlessly collaborate and communicate with our document upload and chat integration. Upload legal documents, engage in real-time discussions, and provide feedback within the intuitive interface. Seamlessly collaborate with clients and colleagues, addressing queries and suggesting edits conveniently. Streamline your workflow and enhance professionalism with our integrated chat functionality.</p>
           </div>
         </div>
       </Link>
@@ -120,8 +122,21 @@ const Dashboard = async ({}) => {
           </div>
           <div className="flex flex-col items center justify-between p-4 gap-4">
             <h2 className="font-bold text-4xl">Transliteration</h2>
-            <p className="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor velit explicabo assumenda animi temporibus vitae, iusto voluptatem ipsa quasi repellat sequi ratione necessitatibus non. Temporibus ab nesciunt ullam eius.</p>
+            <p className="text-lg font-medium">Bridge linguistic gaps effortlessly with our robust transliteration feature.Convert legal documents and contracts between different scripts, ensuring accurate and clear representation of legal terms. Our comprehensive language support, including translation capabilities, enables seamless understanding for clients and legal professionals across diverse languages.Unlock the power of comprehensive language support for enhanced global collaboration.</p>
           </div>
+          
+        </div>
+      </Link>
+      <Link href = '/dashboard/Drafting' className='headerlink'>
+      <div className='flex-1 items-center justify-center space-x-40 md:flex'>
+          <div className='relative h-20 w-20 cursor-pointer p-8'>
+            <Image src="/favicon.ico" alt="icon" fill= {true} style={{objectFit: "contain"}} />
+          </div>
+          <div className="flex flex-col items center justify-between p-4 gap-4">
+            <h2 className="font-bold text-4xl">AI-powered Drafting</h2>
+            <p className="text-lg font-medium">Our AI model has been trained on over 3500+ drafts, enabling it to provide highly customizable templates and tailored suggestions. Say goodbye to generic language and boilerplate documents as our AI understands your specific needs and requirements, helping you create accurate and customized legal documents efficiently. With our AI-powered drafting, you can save time and ensure your documents meet the highest standards. write this with more improvement.</p>
+          </div>
+          
         </div>
       </Link>
       </div>
