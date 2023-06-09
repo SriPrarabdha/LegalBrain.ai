@@ -7,6 +7,8 @@ import Link from "next/link";
 import { useSession } from 'next-auth/react';
 import { redirect } from 'next/navigation';
 
+
+
 const Dashboard = async ({}) => {
 
     // const { data: session } = useSession({
@@ -15,6 +17,8 @@ const Dashboard = async ({}) => {
     //     redirect('/login')
     //   }
     // })
+
+    
     const { data: session, status } = useSession()
     if (status === "unauthenticated") {
       return redirect('/login')
@@ -35,9 +39,18 @@ const Dashboard = async ({}) => {
             }}
           />
         </div>
-        <div className='py-24 sm:py-32 lg:pb-40'>
+        <div className='py-22 sm:py-32 lg:pb-40'>
           <div className='mx-auto max-w-7xl px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl text-center'>
+            
+              <div className='text-effect'> 
+                <h1>
+                  <span> Law. </span>
+                  <span> Gpt. </span>
+                  <span> Ai. </span>
+                </h1>
+            </div>
+           
               {/* <h1 className='text-sm font-bold tracking-tight text-gray-900 sm:text-6xl'>
                  {JSON.stringify(session)}
               </h1> */}
@@ -53,7 +66,7 @@ const Dashboard = async ({}) => {
                 <a
                   href='#'
                   className='text-sm font-semibold leading-6 text-gray-900'>
-                  Our mission <span aria-hidden='true'>→</span>
+                  Our mission →
                 </a>
               </div>
             </div>
