@@ -25,7 +25,7 @@ const Pricing = () => {
       <div className="container mx-auto px-4 md:px-16 ">
         <SectionTitle
           title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Experience the unbeatable value of our pricing plans, tailored to fit your legal needs and backed by the cutting-edge capabilities of LawGPT, the leading AI-powered legal assistant."
           center
           width="665px"
         />
@@ -129,42 +129,42 @@ const Pricing = () => {
         {billingInterval === "indi" && <div className="m-8 grid grid-cols-1 gap-x-7 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            price={isMonthly ? "499" : "49999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle=" Quality legal assistance made affordable with LawGPT Lite."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Chat with Docs" status="active" />
+            <OfferList text="Law GPT" status="active" />
+            <OfferList text="AI-Powered Drafting" status="inactive" />
+            <OfferList text="Judgment/Cases Finder" status="inactive" />
+            <OfferList text="Transliteration" status="inactive" />
+            <OfferList text="Email Support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            price={isMonthly ? "499" : "49999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Essential legal solutions made simple with LawGPT Basic."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Chat with Docs" status="active" />
+            <OfferList text="Law GPT" status="active" />
+            <OfferList text="AI-Powered Drafting" status="active" />
+            <OfferList text="Judgment/Cases Finder" status="active" />
+            <OfferList text="Transliteration" status="inactive" />
+            <OfferList text="Email Support" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            price={isMonthly ? "699" : "59999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle=" Quality legal assistance made affordable with LawGPT Lite"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
+            <OfferList text="Chat with Docs" status="active" />
+            <OfferList text="Law GPT" status="active" />
+            <OfferList text="AI-Powered Drafting" status="active" />
+            <OfferList text="Judgment/Cases Finder" status="active" />
+            <OfferList text="Transliteration" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
           </PricingBox>
         </div>}
 

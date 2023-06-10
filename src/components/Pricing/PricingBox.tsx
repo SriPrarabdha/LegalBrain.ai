@@ -8,25 +8,26 @@ const PricingBox = (props: {
   const { price, duration, packageName, subtitle, children } = props;
 
   return (
-
     <div className="w-[90%]">
-      
-      <div
-        className="relative z-10 rounded-md bg-white px-8 py-10"
-      >
+      <div className="relative z-10 rounded-md bg-white px-8 py-10">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="price mb-2 text-3xl font-bold text-black ">
-            $<span className="amount">{price}</span>
-            <span className="time text-body-color">/{duration}</span>
-          </h3>
-          <h4 className="mb-2 text-xl font-bold ">
-            {packageName}
-          </h4>
+          {packageName === "Lite" ? (
+           <h3 className="price mb-2 text-3xl font-bold text-black ">
+           <span className="amount">Free Trial</span>
+          
+         </h3>
+          ) : (
+            <h3 className="price mb-2 text-3xl font-bold text-black ">
+              ₹<span className="amount">{price}</span>
+              <span className="time text-body-color">/{duration}</span>
+            </h3>
+          )}
+          <h4 className="mb-2 text-xl font-bold ">{packageName}</h4>
         </div>
         <p className="mb-7 text-base ">{subtitle}</p>
         <div className="mb-4  border-opacity-10 pb-8">
           <button className="bg-indigo-500 flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:shadow-signUp hover:bg-opacity-80">
-            Start Free Trial
+            Start Now 
           </button>
         </div>
         <div>{children}</div>
