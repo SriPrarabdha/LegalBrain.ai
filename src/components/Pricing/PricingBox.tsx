@@ -25,7 +25,7 @@ const PricingBox = (props: {
         </div>
         <p className="mb-7 text-base ">{subtitle}</p>
         <div className="mb-4  border-opacity-10 pb-8">
-          <button className="bg-indigo-500 flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80">
+          <button className="bg-indigo-500 flex w-full items-center justify-center rounded-md bg-primary p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:shadow-signUp hover:bg-opacity-80">
             Start Free Trial
           </button>
         </div>

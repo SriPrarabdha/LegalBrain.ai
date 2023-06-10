@@ -3,6 +3,8 @@ import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import Lawfirm from "../Contact/Lawfirm"
+import Institution from "../Contact/Institution"
 
 type BillingInterval = "indi" | "firm" | "institution";
 // type Interval = "lifetime" | "year" | "month";
@@ -165,6 +167,11 @@ const Pricing = () => {
             <OfferList text="Free Lifetime Updates" status="active" />
           </PricingBox>
         </div>}
+
+       { billingInterval==="firm"  && <Lawfirm/>}
+
+       { billingInterval==="institution"  && <Institution/>}
+
       </div>
     </section>
   );

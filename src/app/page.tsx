@@ -11,6 +11,7 @@ import Footer from '@/components/Footer';
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 
+
 export default async function Home() {
 
   await db.set('hello' , 'hello')
@@ -25,6 +26,7 @@ export default async function Home() {
         <AboutSectionOne />
         <AboutSectionTwo />
         <Pricing/>
+        {/* <Contact/> */}
 
         
         <Footer/>
