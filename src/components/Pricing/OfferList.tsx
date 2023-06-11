@@ -17,6 +17,8 @@ const OfferList = ({
   text: string;
   status: "active" | "inactive";
 }) => {
+
+  
   return (
     <div className="mb-3 flex items-center">
       <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-indigo-500 bg-opacity-10">
