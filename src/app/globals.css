@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -24,26 +24,25 @@
     rgb(var(--background-start-rgb));
 } */
 
-@layer base{
-  body{
-    @apply font-body text-[#232428]
+@layer base {
+  body {
+    @apply font-body text-[#232428];
   }
 }
 
-@layer components{
-  .headerlink{
+@layer components {
+  .headerlink {
     @apply cursor-pointer opacity-75 transition hover:opacity-100;
   }
 
-  .headericon{
-    @apply h-5 w-5 cursor-pointer opacity-75 transition hover:opacity-100 
+  .headericon {
+    @apply h-5 w-5 cursor-pointer opacity-75 transition hover:opacity-100;
   }
 
-  .link{
-    @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100
+  .link {
+    @apply relative cursor-pointer text-lg font-medium before:absolute before:inset-x-0 before:-bottom-1.5 before:h-0.5 before:origin-left before:scale-x-0 before:transform before:rounded-bl before:bg-black before:transition-all before:duration-200 hover:before:scale-x-100;
   }
 }
-
 
 /* 
 setting scroll bar */
@@ -58,7 +57,7 @@ body::-webkit-scrollbar-thumb {
 } */
 
 body::-webkit-scrollbar {
-  width: 0.75em;
+  width: 0.65em;
 }
 
 body::-webkit-scrollbar-track {
@@ -67,11 +66,110 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color:#BFBFBF;
+  background-color: #bfbfbf;
   border-radius: 100vh;
   border: 2px solid #f6f7ed;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color:#A0A0A0;
+  background-color: #a0a0a0;
 }
+
+/* /// pricing  */
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(74 108 247 / var(--tw-text-opacity));
+}
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(29 33 68 / var(--tw-text-opacity));
+}
+
+.text-body-color {
+  --tw-text-opacity: 1;
+  color: rgb(149 156 177 / var(--tw-text-opacity));
+}
+
+.shadow-inner {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* .text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(74 108 247 / var(--tw-text-opacity)); */
+/* } */
+
+@keyframes colorCycle {
+  0%,
+  55% {
+    filter: brightness(0) invert(1);
+  }
+  11%,
+  33% {
+    filter: none;
+  }
+}
+
+.text-effect {
+  padding: 2rem;
+}
+
+.text-effect > h1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 6rem;
+  line-height: 6.75rem;
+  letter-spacing: -0.45rem;
+}
+
+.text-effect > h1 > span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(0) invert(1);
+
+  animation: colorCycle 10s ease-in-out infinite;
+  
+}
+
+.text-effect > h1 > span:nth-child(1) {
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+}
+
+.text-effect > h1 > span:nth-child(2) {
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+  animation-delay: 2.25s;
+}
+
+.text-effect > h1 > span:nth-child(3) {
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  animation-delay: 4.33s;
+}
+
+
+.shadow-signUp{
+  --tw-shadow: 0px 5px 10px rgba(4, 10, 34, 0.2);
+  --tw-shadow-colored: 0px 5px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-signUp:hover{
+  --tw-shadow: 0px 5px 10px rgba(4, 10, 34, 0.2);
+  --tw-shadow-colored: 0px 5px 10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus-visible\:shadow-none:focus-visible{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+

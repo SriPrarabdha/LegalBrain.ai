@@ -1,5 +1,9 @@
+"use client";
 import Image from "next/image";
+
 import SectionTitle from "./SectionTitle";
+import { motion } from "framer-motion";
+
 
 
 const checkIcon = (
@@ -11,6 +15,8 @@ const checkIcon = (
 const AboutSectionOne = () => {
   // Error: Binding element 'name' implicitly has an 'any' type.ts(7031)
   // resolved
+
+  
   const List = ( { text}: { text: string}) => (
     <p className="mb-5 flex items-center text-lg font-medium text-body-color">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
@@ -25,13 +31,16 @@ const AboutSectionOne = () => {
       <div className="container mx-auto ">
         <div className="border-b border-body-color/[.15] pb-16  md:pb-20 lg:pb-28">
           <div className="mx-5 flex flex-wrap items-center md:px-16">
-            <div className="w-full px-4 lg:w-1/2">
+            <div className="w-full px-10 md:px-2 lg:w-1/2">
+              
               <SectionTitle
                 // title="Crafted for Startup, SaaS and Business Sites."
-                title="Lorem ipsum dolor sit amet, consectetur"
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Transforming Legal Practice with AI-Powered Solutions"
+                paragraph="Welcome to LegalBrain.ai, where we combine cutting-edge technology with legal expertise to revolutionize the way legal professionals work.Our mission is to empower lawyers with advanced AI tools that streamline their processes."
                 mb="44px"
               />
+            
+
 
               <div
                 className="wow fadeInUp mb-12 max-w-[570px] lg:mb-0"
@@ -40,32 +49,36 @@ const AboutSectionOne = () => {
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                     <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Precision" />
+                    <List text="Premier support" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
+                    <List text="Streamlined Database" />
                     <List text="Rich documentation" />
                     <List text="Developer friendly" />
                   </div>
                 </div>
               </div>
             </div>
-
-            <div className="w-full px-4 lg:w-1/2">
+          
+            <div className="w-full  lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
-                data-wow-delay=".2s"
+                className="relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+ 
               >
+                
                 <Image
                   src="/about/about-image.svg"
                   alt="about-image"
                   fill
                   className="mx-auto max-w-full lg:mr-0"
                 />
+                
+                
               </div>
             </div>
+            
           </div>
         </div>
       </div>

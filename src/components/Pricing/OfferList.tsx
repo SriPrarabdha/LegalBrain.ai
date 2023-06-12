@@ -17,12 +17,14 @@ const OfferList = ({
   text: string;
   status: "active" | "inactive";
 }) => {
+
+  
   return (
     <div className="mb-3 flex items-center">
-      <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-primary bg-opacity-10 text-primary">
+      <span className="mr-3 flex h-[18px] w-full max-w-[18px] items-center justify-center rounded-full bg-indigo-500 bg-opacity-10">
         {status === "active" ? checkIcon : crossIcon}
       </span>
-      <p className="m-0 text-base font-medium text-body-color">{text}</p>
+      <p className="m-0 text-base font-medium ">{text}</p>
     </div>
   );
 };
