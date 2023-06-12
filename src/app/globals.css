@@ -137,6 +137,7 @@ body::-webkit-scrollbar-thumb:hover {
   filter: brightness(0) invert(1);
 
   animation: colorCycle 10s ease-in-out infinite;
+  
 }
 
 .text-effect > h1 > span:nth-child(1) {
@@ -171,3 +172,4 @@ body::-webkit-scrollbar-thumb:hover {
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+

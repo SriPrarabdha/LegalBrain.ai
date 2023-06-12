@@ -8,7 +8,7 @@ const PricingBox = (props: {
   const { price, duration, packageName, subtitle, children } = props;
 
   return (
-    <div className="w-[90%]">
+    <div className="w-[100%]">
       <div className="relative z-10 rounded-md bg-white px-8 py-10">
         <div className="flex items-center justify-between mb-2">
           {packageName === "Lite" ? (

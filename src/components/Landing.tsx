@@ -7,11 +7,17 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial, GradientTexture } from "@react-three/drei";
 import React, { Suspense } from "react";
 import Button from './ui/Button';
+import { motion } from "framer-motion"
 
 interface pageProps{}
 
 const Landing : FC<pageProps> = ({}) =>{
     return <section className='sticky top-0 mx-auto flex h-screen max-w-[1000px] xl:max-w-[1350px] items-center justify-between'>
+        {/* <motion.div
+  animate={{ x: 80 }}
+  transition={{ ease: "easeOut", duration: 2 }}
+> */}
+
         <div className='space-y-10 px-10'>
             <h1 className='space-y-5 tracking-wider xl:text-7xl'>
                 {/* <span className=' block font-extrabold text-6xl'>Powered By</span> */}
@@ -29,6 +35,7 @@ const Landing : FC<pageProps> = ({}) =>{
             <br />
             <a className='text-base px-4 link' href='#'>Join waitlist →</a>
         </div>
+        {/* </motion.div> */}
         <div className='hidden relative h-[400px] w-[400px] transition-all duration-500 md:inline lg:h-[650px] lg:w-[650px]'>
         <Canvas>
             <Suspense fallback={null}>

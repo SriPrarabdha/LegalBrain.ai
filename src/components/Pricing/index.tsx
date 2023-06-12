@@ -86,8 +86,8 @@ const Pricing = () => {
           && 
           <div className="w-full">
             <div
-              className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
-              data-wow-delay=".1s"
+              className=" mb-8 flex justify-center md:mb-12 lg:mb-16"
+              
             >
               <span
                 onClick={() => setIsMonthly(true)}
